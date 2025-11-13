@@ -4,107 +4,114 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <ul style="padding-left: 0px">
-      <li style="display: inline"><a href="./index.html">Home</a></li>
-      <li style="display: inline">|</li>
-      <li style="display: inline"><a href="./about.html">About</a></li>
-      <li style="display: inline">|</li>
-      <li style="display: inline"><a href="./contacts.html">Contacts</a></li>
-    </ul>
-    <h1>About me</h1>
-    <hr />
-    <img
-      style="width: 240px"
-      src="./pictures/avatar.jpg"
-      alt="profile picture"
-    />
+    <header>
+      <ul class="navigation">
+        <li class="nav-element"><a href="./index.html">Home</a></li>
+        <li class="nav-element"><a href="./about.html">About</a></li>
+        <li class="nav-element"><a href="./contacts.html">Contacts</a></li>
+      </ul>
+    </header>
+    <div class="block">
+      <main class="container">
+        <h1 class="heading">About me</h1>
+        <hr />
+        <div class="hero-container">
+          <img
+            class="hero-image"
+            src="./pictures/avatar.jpg"
+            alt="profile picture"
+          />
 
-    <p>
-      I am a young designer who loves creativity, color, and visual
-      storytelling. I enjoy turning ideas into meaningful and beautiful designs.
-    </p>
+          <p class="hero-text">
+            I am a young designer who loves creativity, color, and visual
+            storytelling. I enjoy turning ideas into meaningful and beautiful
+            designs.
+          </p>
+        </div>
 
-    <h2>My skills</h2>
-    <table border="1">
-      <thead align="left">
-        <tr>
-          <th>Skill</th>
-          <th>Level</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Figma</td>
-          <td>
-            <ul style="padding-left: 0px">
-              <li style="display: inline">
-                <img src="./pictures/star_filled.png" alt="star filled" />
-              </li>
-              <li style="display: inline">
-                <img src="./pictures/star_filled.png" alt="star filled" />
-              </li>
-              <li style="display: inline">
-                <img src="./pictures/star_filled.png" alt="star filled" />
-              </li>
-              <li style="display: inline">
-                <img src="./pictures/star_filled.png" alt="star filled" />
-              </li>
-              <li style="display: inline">
-                <img src="./pictures/star_empty.png" alt="star empty" />
-              </li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>Photoshop</td>
-          <td>
-            <ul style="padding-left: 0px">
-              <li style="display: inline">
-                <img src="./pictures/star_filled.png" alt="star filled" />
-              </li>
-              <li style="display: inline">
-                <img src="./pictures/star_filled.png" alt="star filled" />
-              </li>
-              <li style="display: inline">
-                <img src="./pictures/star_filled.png" alt="star filled" />
-              </li>
-              <li style="display: inline">
-                <img src="./pictures/star_empty.png" alt="star empty" />
-              </li>
-              <li style="display: inline">
-                <img src="./pictures/star_empty.png" alt="star empty" />
-              </li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>HTML</td>
-          <td>
-            <ul style="padding-left: 0px">
-              <li style="display: inline">
-                <img src="./pictures/star_filled.png" alt="star filled" />
-              </li>
-              <li style="display: inline">
-                <img src="./pictures/star_filled.png" alt="star filled" />
-              </li>
-              <li style="display: inline">
-                <img src="./pictures/star_empty.png" alt="star empty" />
-              </li>
-              <li style="display: inline">
-                <img src="./pictures/star_empty.png" alt="star empty" />
-              </li>
-              <li style="display: inline">
-                <img src="./pictures/star_empty.png" alt="star empty" />
-              </li>
-            </ul>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <hr />
-    <a href="./index.html">← Back</a>
+        <h2>My skills</h2>
+        <table>
+          <thead class="table-headings">
+            <tr>
+              <th>Skill</th>
+              <th>Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Figma</td>
+              <td>
+                <ul>
+                  <li class="nav-element">
+                    <img src="./pictures/star_filled.png" alt="star filled" />
+                  </li>
+                  <li class="nav-element">
+                    <img src="./pictures/star_filled.png" alt="star filled" />
+                  </li>
+                  <li class="nav-element">
+                    <img src="./pictures/star_filled.png" alt="star filled" />
+                  </li>
+                  <li class="nav-element">
+                    <img src="./pictures/star_filled.png" alt="star filled" />
+                  </li>
+                  <li class="nav-element">
+                    <img src="./pictures/star_empty.png" alt="star empty" />
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Photoshop</td>
+              <td>
+                <ul>
+                  <li class="nav-element">
+                    <img src="./pictures/star_filled.png" alt="star filled" />
+                  </li>
+                  <li class="nav-element">
+                    <img src="./pictures/star_filled.png" alt="star filled" />
+                  </li>
+                  <li class="nav-element">
+                    <img src="./pictures/star_filled.png" alt="star filled" />
+                  </li>
+                  <li class="nav-element">
+                    <img src="./pictures/star_empty.png" alt="star empty" />
+                  </li>
+                  <li class="nav-element">
+                    <img src="./pictures/star_empty.png" alt="star empty" />
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td>
+                <ul>
+                  <li class="nav-element">
+                    <img src="./pictures/star_filled.png" alt="star filled" />
+                  </li>
+                  <li class="nav-element">
+                    <img src="./pictures/star_filled.png" alt="star filled" />
+                  </li>
+                  <li class="nav-element">
+                    <img src="./pictures/star_empty.png" alt="star empty" />
+                  </li>
+                  <li class="nav-element">
+                    <img src="./pictures/star_empty.png" alt="star empty" />
+                  </li>
+                  <li class="nav-element">
+                    <img src="./pictures/star_empty.png" alt="star empty" />
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <hr />
+      </main>
+      <a class="footer white" href="./index.html">← Back</a>
+    </div>
   </body>
 </html>

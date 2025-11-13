@@ -1,129 +1,153 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Delius+Swash+Caps&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+hr {
+  color: rgb(226, 179, 137);
 }
 
 body {
-  background-color: black;
-  font-family: "Raleway", sans-serif;
-  color: white;
+  background-color: burlywood;
+  font-family: "Delius Swash Caps", sans-serif;
+  color: rgb(121, 74, 53);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 80px;
+  font-size: larger;
 }
 
-p,
-li,
-button {
-  color: white;
+.block {
+  margin-top: 40px;
+  color: rgb(231, 215, 189);
+  padding: 0 40px;
+  background-color: rgb(121, 74, 53);
+  border-radius: 32px;
 }
 
 .container {
-  padding: 0 80px;
-  max-width: 1280px;
-  margin: 0 auto;
+  padding: 40px 0 20px 0;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px 0;
-  margin: 0 auto;
+a:link,
+a:visited {
+  text-decoration: none;
+  color: rgb(121, 74, 53);
 }
 
-.logo {
-  margin-right: 160px;
-  width: 200px;
+a:hover {
+  color: rgb(97, 39, 39);
+  font-weight: bold;
+}
+
+.heading {
+  margin-bottom: 24px;
+}
+
+.list-home {
+  margin: 24px 0;
 }
 
 .navigation {
   display: flex;
-  column-gap: 28px;
-  list-style: none;
-  margin-right: 57px;
+  column-gap: 80px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(231, 215, 189);
+  padding: 16px 0;
+  margin: 16px auto;
+  border-radius: 80px;
 }
 
-.cta-button {
-  margin-left: 57px;
-  font-family: "Raleway", sans-serif;
-  display: block;
-  padding: 10px 32px;
-  border-radius: 40px;
-  background: linear-gradient(
-    89.75deg,
-    #5bdbfd 0.26%,
-    #7375ff 51.07%,
-    #df93ff 100.96%,
-    #e56f8c 126.34%
-  );
-  border: none;
+.nav-element {
+  display: inline;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
 }
 
 .hero-container {
   display: flex;
   gap: 24px;
   position: relative;
+  padding: 24px 0;
+  align-items: center;
 }
 
-.bg-gradient {
-  position: absolute;
-  right: 0;
-}
 .hero-image {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 640px;
-  height: 260px;
-  background-image: url("./img/hero-img.jpg");
+  border-radius: 8px;
+  width: 240px;
 }
 
-.hero-description {
-  font-size: 18px;
-  font-weight: 400;
+.hero-text {
+  max-width: 480px;
 }
 
-.hero-subtitle {
-  font-size: 24px;
-  font-weight: 700;
-  margin: 42px 0 18px 0;
-  background: linear-gradient(
-    90.63deg,
-    #90e8ff 0.44%,
-    #9c9eff 69.99%,
-    #e3a1ff 138.27%,
-    #e56f8c 173.01%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+table,
+th,
+td {
+  border: 2px solid rgb(121, 74, 53);
+  border-collapse: collapse;
+  padding: 2px 10px;
+  border-radius: 16px;
+  background-color: rgb(231, 215, 189);
+  margin: 8px 0 24px 0;
+  color: rgb(121, 74, 53);
 }
 
-.hero-title {
-  font-size: 96px;
-  font-weight: 800;
-  text-transform: uppercase;
+.table-headings {
+  text-align: left;
+}
+
+a.white:link,
+a.white:visited {
+  color: rgb(231, 215, 189);
+}
+
+.contacts-main {
+  display: flex;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.contact-item {
+  padding: 4px;
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: start;
+  }
+  .contacts-main {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 600px) {
-  .navigation {
-    display: none;
+  body {
+    font-size: smaller;
+    width: 100%;
+    padding-left: 0;
   }
+
+  .navigation {
+    font-size: larger;
+    column-gap: 40px;
+  }
+
   .hero-container {
     flex-direction: column;
+    align-items: start;
   }
-  .hero-title {
-    text-align: center;
-  }
-  .hero-subtitle {
-    text-align: center;
-  }
-  .hero-description {
-    text-align: center;
-  }
-}
 
-@media (min-width: 600px) and (max-width: 1200px) {
-  .hero-text {
-    width: 50%;
+  .contacts-main {
+    flex-direction: column;
   }
 }

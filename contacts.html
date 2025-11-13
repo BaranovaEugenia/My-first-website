@@ -4,33 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacts</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <ul style="padding-left: 0px">
-      <li style="display: inline"><a href="./index.html">Home</a></li>
-      <li style="display: inline">|</li>
-      <li style="display: inline"><a href="./about.html">About</a></li>
-      <li style="display: inline">|</li>
-      <li style="display: inline"><a href="./contacts.html">Contacts</a></li>
-    </ul>
-    <h1>Contacts</h1>
-    <hr />
-    <p>You can contact me via:</p>
-    <ul style="list-style-type: none; padding-left: 0">
-      <li>
-        <img src="./pictures/phone.png" alt="phone" />  <a href="">+38 (050) 123-45-67</a
-        >
-      </li>
-      <li>
-        <img src="./pictures/email.png" alt="email" />  <a href="">baranova.eugeniia@gmail.com</a
-        >
-      </li>
-      <li>
-        <img src="./pictures/behance.png" alt="behance" />  <a href="https://www.behance.net/zhenya_baranova">Behance</a>
-      </li>
-    </ul>
-    <hr />
-    <a href="./index.html">← Back</a>
+    <header>
+      <ul class="navigation">
+        <li class="nav-element"><a href="./index.html">Home</a></li>
+        <li class="nav-element"><a href="./about.html">About</a></li>
+        <li class="nav-element"><a href="./contacts.html">Contacts</a></li>
+      </ul>
+    </header>
+    <div class="block">
+      <main class="container">
+        <h1 class="heading">Contacts</h1>
+        <hr />
+        <div class="contacts-main">
+          <p>You can contact me via:</p>
+          <ul>
+            <li class="contact-item">
+              <img src="./pictures/phone.png" alt="phone" />
+              <a class="white" href="">+38 (050) 123-45-67</a>
+            </li>
+            <li class="contact-item">
+              <img src="./pictures/email.png" alt="email" />
+              <a class="white" href="">baranova.eugeniia@gmail.com</a>
+            </li>
+            <li class="contact-item">
+              <img src="./pictures/behance.png" alt="behance" />
+              <a class="white" href="https://www.behance.net/zhenya_baranova"
+                >Behance</a
+              >
+            </li>
+          </ul>
+        </div>
+        <hr />
+      </main>
+      <a class="footer white" href="./index.html">← Back</a>
+    </div>
   </body>
 </html>
